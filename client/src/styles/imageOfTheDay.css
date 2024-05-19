@@ -1,0 +1,97 @@
+/* ImageOfTheDay.css */
+
+.container-fluid {
+  color: white; /* Change text color to white */
+}
+
+.date,
+.title,
+.explanation,
+.url a,
+.url-no-justify {
+  color: white; /* Change text color to white */
+}
+
+.date {
+  font-style: italic;
+}
+
+.explanation {
+  margin-top: 20px; /* Increase the space at the top of the description */
+  text-align: justify; /* Justify the description */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+}
+
+.col-md-6 {
+  flex-basis: auto; /* Each column takes its own width */
+  flex-grow: 1;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Align items to the top */
+  margin-bottom: 40px; /* Increase the gap between image and description */
+}
+
+.image-container img,
+.image-container iframe {
+  max-width: 100%;
+  height: 450px; /* Increase the height of the image */
+  object-fit: cover;
+  border-radius: 10px; /* Optional: Add border radius for rounded corners */
+}
+
+.description-container,
+.description-container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 40px; /* Increase the space at the top of the description */
+  margin-left: 30px; /* Adjust spacing between image and description */
+}
+
+.description-container .url,
+.description-container-1 .url {
+  margin-top: 20px; /* Adjusted margin for URL */
+}
+
+.url a {
+  color: blue;
+}
+
+.url a:hover {
+  text-decoration: underline;
+}
+
+.url span {
+  display: inline-block; /* Prevent justification for this part */
+}
+
+.url-no-justify {
+  text-align: left; /* Override justification */
+}
+
+/* Slider styles */
+.slick-slider {
+  margin-top: 20px;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-slide img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
